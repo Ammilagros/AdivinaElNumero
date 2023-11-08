@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*FUENTES*/
+@font-face {
+    font-family: 'Karma Future';
+    src: url(/assets/fonts/karma-future/KarmaFuture.ttf)
+  }
+
+@font-face {
+    font-family: '8-Bit Operator';
+    src: url(/assets/fonts/8-bit-operator/8bitOperatorPlus-Regular.ttf);
+}
+
+body{
+    background-image: url(/assets/background1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    filter: opacity(1.5);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#main_container{
+    background-color: #09010975;
+    border-radius: 5px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;    
+    text-align: center;
+    padding: 1em;
+    position: relative;
+        top: 2em;    
+    width: 50%; 
+    height: 23em;
+}
+
+#title_container, #form_container{
+    padding: 1.5em; 
+}
+
+#title_container, .submitButton, .lastResult, #ResetButton{
+    font-family: 'Karma Future', sans-serif;  
+}
+
+.submitButton, #ResetButton, .lastResult{
+    padding: 3px;
+}
+
+#ResetButton{
+    color: #090109;
+    background-color: #F2EFE9; 
+    border-color: #F2EFE9;
+    display: none;
+    position: relative;
+        bottom: -1em;
+}
+
+.lastResult{
+    font-family: 'Karma Future', sans-serif; 
+    font-weight:bold;
+    font-size: large;
+}
+
+.lastResult, #ResetButton{
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+#description_container, .results, #guessField_label{
+    color: #F2EFE9;
+    font-family: '8-Bit Operator';
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/numberGuesser.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>Guess the number!</title>
+</head>
+<body>
+   
+    <div id="main_container">
+        <div id="title_container">
+            <h1>Guess the number!</h1>
+        </div>
+        
+        <div id="description_container">
+            <p>
+                We select a random number between 1 and 100. 
+                See if you can guess it in 10 turns or lees.
+            </p>
+        </div>
+
+        <div id="form_container">
+            <div class="form">
+                <label for="guessField" id="guessField_label">Enter a guess: </label>
+                <input type="number" min="1" max="100" required id="guessField" class="guessField">
+                <input type="submit" value="Let's go!" class="submitButton">
+              </div>
+        </div>
+
+        <div class="results">
+            <div class="guesses"></div>
+            <div class="lastResult"></div>
+            <div class="lowOrHi"></div>
+            <div class="outOfRangeNumber"></div>
+        </div>
+
+        <div id="button_reset_container">
+            <button id="ResetButton">Try again</button>
+        </div>
+
+    </div>
+        
+    <script src="/JS/numberGuesser.js"></script>
+</body>
+</html>

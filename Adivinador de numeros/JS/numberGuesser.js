@@ -46,7 +46,7 @@ function startGame(){
         gameOver();
 
     } 
-    else if (guessCount === 10) {
+    if (guessCount === 10) {
         lastResult.textContent = "Game Over"
         lastResult.style.color ="#FF1900"
         lowOrHi.textContent = " ";
